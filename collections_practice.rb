@@ -14,7 +14,7 @@ def sort_array_desc(array)
   end
 end
 
-def sort_array_char_count(array) 
+def sort_array_char_count(array)
   array.sort do |a, b|
     if a == b
       0
@@ -26,7 +26,7 @@ def sort_array_char_count(array)
   end
 end
 
-def swap_elements(array) # needs to switch index 1 and 2 
+def swap_elements(array) # needs to switch index 1 and 2
   array.sort do |a, b|
     if a == b
       0
