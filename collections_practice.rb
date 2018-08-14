@@ -30,7 +30,7 @@ def swap_elements(array) # needs to switch index 1 and 2
   array.sort do |a, b|
     if a == b
       0
-    elsif array[a.to_i].index == 1 && array[b.to_i].index == 2
+    elsif array.index[a] == 1 && array[b.to_i].index == 2
       array[a].index + 1
     elsif array[a.to_i].index == 2 && array[b.to_i].index == 1
       array[a].index - 1
