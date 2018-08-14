@@ -31,7 +31,7 @@ end
 def swap_elements(array) # needs to switch index 1 and 2
   array.sort do |a, b|
 
-    if array.index(a) > array.index(b) ==
+    if array.index(a) > array.index(b)
       array[a], array[b] = array[b], array[a]
     elsif array.index(a) < 2 && array.index(b) == 1
       array[b], array[a] = array[a], array[b]
