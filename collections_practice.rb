@@ -43,5 +43,5 @@ binding.pry
 array = ["a", "b", "c", "d"]
 
 def swap(array)
-  array.each {|x| puts "the index of #{x} is #{array[x]}"}
+  array.each {|x| "the index of #{x} is #{array[x]}"}
 end
