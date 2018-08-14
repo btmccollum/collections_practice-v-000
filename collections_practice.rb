@@ -85,4 +85,5 @@ def find_a(array)
       new_array << x
     end
   end
+  new_array
 end
