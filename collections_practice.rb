@@ -27,13 +27,10 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array) # needs to switch index 1 and 2
-  array.sort do |a, b|
-    if a == b
-      0
-    elsif array[a] > array[b]
-      array[a], array[b] = array[b], array[a]
-    end
-  end
-
+  array.collect do |x|
+    if array.index(x) == 1
+      array[x] + 1
+    elsif array.index(x) == 2
+      array[x] - 1
 
 end
