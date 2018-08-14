@@ -53,6 +53,6 @@ def find_a(array)
   array.delete_if { |x| x.start_with?("a") == false } #alt: array.reject {|x| x.start_with?("a") == false}
 end
 
-def sum_array(array) 
+def sum_array(array)
   array.inject { |sum, n| sum + n }
 end
