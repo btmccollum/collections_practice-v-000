@@ -87,7 +87,7 @@ def find_a(array)
   # end
   # new_array
   array.map do |x|
-    if x.start_with?("a")}
+    if x.start_with?("a")
       return x
     end
 
