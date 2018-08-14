@@ -55,9 +55,9 @@ def swap_elements(array) # needs to switch index 1 and 2
 # def swap(array)
 array.collect do |x|
     if array.index(x) == 1
-      array.index(x + 1)
+      array.index(x) + 1
     elsif array.index(x) == 2
-      array.index(x - 1)
+      array.index(x) - 1
     end
   end
 end
