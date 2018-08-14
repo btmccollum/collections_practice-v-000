@@ -29,19 +29,35 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array) # needs to switch index 1 and 2
-  array.sort do |a, b|
+#   array.sort do |a, b|
+# 
+#     if array.index(a) > array.index(b)
+#       array[a], array[b] = array[b], array[a]
+#     elsif array.index(a) < array.index(b)
+#       array[b], array[a] = array[a], array[b]
+#     end
+#   end
+# # end
+# binding.pry
+# 
+# array = ["a", "b", "c", "d"]
+# 
+# def swap(array)
+#   array.each {|x| puts "the index of #{x} is #{array.index(x)}"}
+# end
+# 
+# array = ["a", "b", "c", "d"]
+# 
+# # def swap(array)
+# #   array.each {|x| puts "the index of #{x} is #{array[x]}"}
+# # end
 
-    if array[a] > array[b]
-      array[a], array[b] = array[b], array[a]
-    elsif array[a] < 2 && array[b] == 1
-      array[b], array[a] = array[a], array[b]
+# def swap(array)
+array.collect do |x|
+    if array.index(x) == 1
+      array.index(x) + 1
+    elsif array.index(x) == 2
+      array.index(x) - 1
     end
   end
-end
-binding.pry
-
-array = ["a", "b", "c", "d"]
-
-def swap(array)
-  array.each {|x| puts "the index of #{x} is #{array.index(x)}"}
 end
