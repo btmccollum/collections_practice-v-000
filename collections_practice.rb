@@ -65,5 +65,5 @@ def add_s(array)
   #     x
   #   end
   # end
-  array.each_with_index.collect {|x, index| x + "s" unless index == 2}
+  array.each_with_index.collect {|x, index| x + "s" unless index == 1 then x}
 end
