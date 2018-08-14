@@ -77,7 +77,7 @@ def kesha_maker(array)
   # end
   # kesha_array
   array.collect do |x|
-    x[2] = $
+    x[2] = "$"
   end
 end
 
