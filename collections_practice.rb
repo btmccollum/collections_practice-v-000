@@ -35,7 +35,7 @@ def swap_elements(array) # needs to switch index 1 and 2
     elsif array[x] == 2
       array[x] - 1
     end
-    binding.pry
   end
 
 end
+binding.binding.pry
