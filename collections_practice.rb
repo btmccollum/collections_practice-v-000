@@ -1,5 +1,3 @@
-require 'pry'
-
 def sort_array_asc(array)
   array.sort
 end
@@ -28,33 +26,9 @@ def sort_array_char_count(array)
   end
 end
 
-# def swap_elements(array) # needs to switch index 1 and 2
-#   array.sort do |a, b|
-#
-#     if array.index(a) > array.index(b)
-#       array[a], array[b] = array[b], array[a]
-#     elsif array.index(a) < array.index(b)
-#       array[b], array[a] = array[a], array[b]
-#     end
-#   end
-# # end
-# binding.pry
-#
-# array = ["a", "b", "c", "d"]
-#
-# def swap(array)
-#   array.each {|x| puts "the index of #{x} is #{array.index(x)}"}
-# end
-#
-# array = ["a", "b", "c", "d"]
-#
-# # def swap(array)
-# #   array.each {|x| puts "the index of #{x} is #{array[x]}"}
-# # end
-
 def swap_elements(array)
   new_array = []
-  array.each { |x| new_array << x}
+  array.each { |x| new_array << x }
   new_array[1], new_array [2] = new_array[2], new_array[1]
   new_array
 end
@@ -76,5 +50,8 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.delete_if {|x| x.start_with?("a") == false} #alt: array.reject {|x| x.start_with?("a") == false}
+  array.delete_if { |x| x.start_with?("a") == false } #alt: array.reject {|x| x.start_with?("a") == false}
 end
+
+def sum_array(array) { |sum, n| sum + n }
+  array.inject
