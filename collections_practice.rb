@@ -65,5 +65,5 @@ def add_s(array)
   #     x
   #   end
   # end
-  array.each_with_index.collect {|x, index| x[index] == 2 ? x + "s" : x }
+  array.each_with_index.collect {|x, index| index != 2 ? x + "s" : x }
 end
