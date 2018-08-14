@@ -62,4 +62,3 @@ end
 def swap_elements_form_to(array, index, destination)
   array[index], array[destination] = array[destination], array[index]
 end
-
