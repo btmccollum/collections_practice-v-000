@@ -38,4 +38,4 @@ def swap_elements(array) # needs to switch index 1 and 2
   end
 
 end
-binding.binding.pry
+binding.pry
