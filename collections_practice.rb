@@ -90,5 +90,5 @@ def find_a(array)
     if x.start_with?("a")}
       return x
     end
-  end
+
 end
