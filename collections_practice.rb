@@ -79,5 +79,6 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.delete_if {|x| x.start_with?("a") == false}
+  # array.delete_if {|x| x.start_with?("a") == false}
+  array.reject {|x| x.start_with?("a") == false}
 end
