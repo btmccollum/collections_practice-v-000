@@ -32,5 +32,6 @@ def swap_elements(array) # needs to switch index 1 and 2
       array[x] + 1
     elsif array.index(x) == 2
       array[x] - 1
-
+end
+end
 end
