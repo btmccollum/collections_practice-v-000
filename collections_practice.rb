@@ -30,7 +30,7 @@ end
 
 def swap_elements(array) # needs to switch index 1 and 2
 #   array.sort do |a, b|
-# 
+#
 #     if array.index(a) > array.index(b)
 #       array[a], array[b] = array[b], array[a]
 #     elsif array.index(a) < array.index(b)
@@ -39,15 +39,15 @@ def swap_elements(array) # needs to switch index 1 and 2
 #   end
 # # end
 # binding.pry
-# 
+#
 # array = ["a", "b", "c", "d"]
-# 
+#
 # def swap(array)
 #   array.each {|x| puts "the index of #{x} is #{array.index(x)}"}
 # end
-# 
+#
 # array = ["a", "b", "c", "d"]
-# 
+#
 # # def swap(array)
 # #   array.each {|x| puts "the index of #{x} is #{array[x]}"}
 # # end
