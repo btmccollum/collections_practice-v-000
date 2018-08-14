@@ -52,12 +52,7 @@ def swap_elements(array) # needs to switch index 1 and 2
 # #   array.each {|x| puts "the index of #{x} is #{array[x]}"}
 # # end
 
-# def swap(array)
-array.collect do |x|
-    if array.index(x) == 1
-      array.index(x) + 1
-    elsif array.index(x) == 2
-      array.index(x) - 1
-    end
-  end
+def swap_elements(array)
+  array[1], array [2] = array[2], array[1]
 end
+  
