@@ -1,1 +1,34 @@
+def sort_array_asc(array)
+  array.sort
+end
 
+def sort_array_desc(array)
+  array.sort do |a, b|
+    if a == b
+      0
+    elsif a < b
+      1
+    elsif a > b
+      -1
+    end
+  end
+end
+
+def sort_array_char_count(array) 
+  array.sort do |a, b|
+    if a == b
+      0
+    elsif array[a].index == 1 && array[b].index == 2
+      array[a].index + 1
+    elsif array[a].index == 2 && array[b].index == 1
+      array[a].index - 1
+    end
+  end
+end
+
+def swap_elements(array) # needs to switch index 1 and 2 
+  array.sort do |a, b|
+    if a
+    end
+  end
+end
