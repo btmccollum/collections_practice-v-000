@@ -28,7 +28,7 @@ def sort_array_char_count(array)
   end
 end
 
-def swap_elements(array) # needs to switch index 1 and 2
+# def swap_elements(array) # needs to switch index 1 and 2
 #   array.sort do |a, b|
 #
 #     if array.index(a) > array.index(b)
@@ -55,4 +55,3 @@ def swap_elements(array) # needs to switch index 1 and 2
 def swap_elements(array)
   array[1], array [2] = array[2], array[1]
 end
-  
