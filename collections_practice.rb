@@ -28,9 +28,9 @@ end
 
 def swap_elements(array) # needs to switch index 1 and 2
   array.collect do |x|
-    if array.index(x) == 1
+    if array[x] == 1
       array[x] + 1
-    elsif array.index(x) == 2
+    elsif array[x] == 2
       array[x] - 1
     end
   end
