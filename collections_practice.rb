@@ -58,5 +58,8 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect { |x| x + "s" }
+  array.collect do |x|
+    if array.index(x) != 2
+      x + "s"
+    end
 end
