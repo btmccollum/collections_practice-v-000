@@ -60,7 +60,6 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination)
-  # array.sort do |a,b|
     array[index], array[destination] = array[destination], array[index]
     return array
 end
@@ -70,12 +69,6 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  # kesha_array = []
-  # array.each do |x|
-  #   x[2] = "$"
-  #   kesha_array << x
-  # end
-  # kesha_array
   array.collect do |x|
     x[2] = "$"
     x
@@ -83,6 +76,5 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.delete_if {|x| x.start_with?("a") == false}
-  # array.reject {|x| x.start_with?("a") == false}
+  array.delete_if {|x| x.start_with?("a") == false} #alt: array.reject {|x| x.start_with?("a") == false}
 end
