@@ -79,11 +79,12 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  new_array = []
-  array.each do |x|
-    if x[0] == "a"
-      new_array << x
-    end
-  end
-  new_array
+  # new_array = []
+  # array.each do |x|
+  #   if x[0] == "a"
+  #     new_array << x
+  #   end
+  # end
+  # new_array
+  array.map { |x| x.start_with?("a")}
 end
