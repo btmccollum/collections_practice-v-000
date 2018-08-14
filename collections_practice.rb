@@ -58,6 +58,7 @@ def swap_elements(array)
   # new_array[1], new_array [2] = new_array[2], new_array[1]
   # new_array
   array.collect do |x|
-    array[1], array[2] = array[2], array[1]
+    
   end
+  array[1], array[2] = array[2], array[1]
 end
