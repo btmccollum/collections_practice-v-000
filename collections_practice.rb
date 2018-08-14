@@ -90,7 +90,7 @@ def find_a(array)
     if x.start_with?("a")
        x
     else
-      x.reject
+      reject
     end
 end
 end
