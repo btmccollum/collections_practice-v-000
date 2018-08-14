@@ -88,4 +88,3 @@ def find_a(array)
   # new_array
   array.delete_if {|x| x.starts_with?("a") == false}
     end
-end
