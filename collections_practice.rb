@@ -59,6 +59,8 @@ def swap_elements(array)
   new_array
 end
 
-def swap_elements_form_to(array, index, destination)
-  array[index], array[destination] = array[destination], array[index]
+def swap_elements_from_to(array, index, destination)
+  # array.sort do |a,b|
+    array[index], array[destination] = array[destination], array[index]
+    return array
 end
