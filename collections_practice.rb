@@ -78,6 +78,7 @@ def kesha_maker(array)
   # kesha_array
   array.collect do |x|
     x[2] = $
+  end
 end
 
 def find_a(array)
