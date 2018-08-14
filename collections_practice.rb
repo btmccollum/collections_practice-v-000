@@ -39,3 +39,8 @@ def swap_elements(array) # needs to switch index 1 and 2
   end
 end
 binding.pry
+
+array = ["a", "b", "c", "d"]
+
+def swap(array)
+  array.each {|x| puts "the index of #{array[x]} is #{array.index(x)}"}
