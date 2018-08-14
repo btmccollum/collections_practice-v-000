@@ -58,3 +58,8 @@ def swap_elements(array)
   new_array[1], new_array [2] = new_array[2], new_array[1]
   new_array
 end
+
+def swap_elements_form_to(array, index, destination)
+  array[index], array[destination] = array[destination], array[index]
+end
+
