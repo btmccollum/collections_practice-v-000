@@ -86,11 +86,7 @@ def find_a(array)
   #   end
   # end
   # new_array
-  array.map do |x|
-    if x.start_with?("a")
-       x
-    else
-      reject
+  array.delete_if {|x| x.starts_with?("a") == false}
     end
 end
 end
